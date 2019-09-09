@@ -126,7 +126,23 @@
 
     <section>
       <h2>Форма поиска гостиниц</h2>
-      <!-- здесь будет форма -->
+      <form class="" action="https://echo.htmlacademy.ru" method="get">
+        <label>Дата заезда:
+          <input type="text" name="arrival" value="24 апреля 2017">
+        </label>
+        <label>Дата выезда:
+          <input type="text" name="leave" value="4 июля 2017">
+        </label>
+        <label>Взрослые:
+          <input type="number" name="adults" min="0" step="1" value="2">
+        </label>
+        <label>Дети:
+          <input type="number" name="kids" min="0" step="1" value="0">
+        </label>
+
+        <input type="submit" value="Найти">
+
+      </form>
     </section>
 
 
