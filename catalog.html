@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Поиск гостиниц</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
 
     <header>
       <nav>
         <a href="index.html">
-          <img src="#" width="40" height="40" alt="Логотип «Седона»">
+          <a><img src="img/logo.svg" width="140" height="71" alt="Логотип «Седона»"></a>
         </a>
         <ul>
           <li><a href="about.html">Информация</a></li>
@@ -28,26 +30,42 @@
         <form class="" action="https://echo.htmlacademy.ru" method="get">
 
           <p>Инфраструктура:</p>
-          <label>
-            <input type="checkbox" name="pool" checked>
-          Бассейн</label>
-          <label>
-            <input type="checkbox" name="parking">
-          Парковка</label>
-          <label>
-            <input type="checkbox" name="wifi">
-          Wi-Fi</label>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="pool" checked>
+              Бассейн</label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="parking">
+              Парковка</label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="wifi">
+              Wi-Fi</label>
+            </li>
+          </ul>
 
           <p>Тип жилья:</p>
-          <label>
-            <input type="checkbox" name="holel" checked>
-          Гостиница</label>
-          <label>
-            <input type="checkbox" name="motel" checked>
-          Мотель</label>
-          <label>
-            <input type="checkbox" name="apartment" checked>
-          Апартаменты</label>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="hotel" checked>
+              Гостиница</label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="motel" checked>
+              Мотель</label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="apartment" checked>
+              Апартаменты</label>
+            </li>
+          </ul>
 
           <!-- Блок «Стоимость в сутки» -->
 
@@ -78,7 +96,7 @@
               <h3>Amara Resort & Spa</h3>
             </a>
             <p>
-              <img src="img/amara-hotel.jpg" width="135" height="90" alt="Amara Resort & Spa">
+              <img src="img/amara-hotel.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
             </p>
             <p>
               Гостиница от 4000 Р.
@@ -98,7 +116,7 @@
               <h3>Desert Quail Inn</h3>
             </a>
             <p>
-              <img src="img/desert-motel.jpg" width="135" height="90" alt="Desert Quail Inn">
+              <img src="img/desert-motel.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
             </p>
             <p>
               Мотель от 3000 Р.
@@ -118,7 +136,7 @@
               <h3>villas At Poco Diablo</h3>
             </a>
             <p>
-              <img src="img/villas-apart.jpg" width="135" height="90" alt="Villas At Poco Diablo">
+              <img src="img/villas-apart.jpg" width="135" height="90" alt="Апартаменты Villas At Poco Diablo">
             </p>
             <p>
               Апартаменты от 2000 Р.
@@ -143,15 +161,15 @@
 
       <div class="">
         <ul>
-          <li><a href="https://twitter.com/?lang=ru">Твиттер</a></li>
-          <li><a href="https://www.facebook.com/">Фейсбук</a></li>
-          <li><a href="https://www.youtube.com/">Ютуб</a></li>
+          <li><a href="https://twitter.com/?lang=ru" aria-label="Страница Седоны в твиттер"></a></li>
+          <li><a href="https://www.facebook.com/" aria-label="Страница Седоны на фейсбук"></a></li>
+          <li><a href="https://www.youtube.com/" aria-label="Страница Седоны на ютуб"></a></li>
         </ul>
       </div>
 
       <p>
       website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Разработано HTML Academy">HTML Academy</a>
       </p>
     </footer>
 

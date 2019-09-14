@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
 
     <header>
       <nav>
-        <a><img src="#" width="40" height="40" alt="Логотип «Седона»"></a>
+        <a><img src="img/logo.svg" width="140" height="71" alt="Логотип «Седона»"></a>
         <ul>
           <li><a href="about.html">Информация</a></li>
           <li><a href="media.html">Фото и Видео</a></li>
@@ -102,7 +104,7 @@
 
       <section>
         <h2>Карта штата</h2>
-        <img src="img/map.png" width="1200" height="593" alt="карта штата">
+        <img src="img/map.png" width="1200" height="593" alt="Седона, Коконино-Каунти, штат Аризона, Соединённые Штаты Америки">
       </section>
 
     </main>
@@ -112,35 +114,43 @@
 
       <div class="">
         <ul>
-          <li><a href="https://twitter.com/?lang=ru">Твиттер</a></li>
-          <li><a href="https://www.facebook.com/">Фейсбук</a></li>
-          <li><a href="https://www.youtube.com/">Ютуб</a></li>
+          <li><a href="https://twitter.com/?lang=ru" aria-label="Страница Седоны в твиттер"></a></li>
+          <li><a href="https://www.facebook.com/" aria-label="Страница Седоны на фейсбук"></a></li>
+          <li><a href="https://www.youtube.com/" aria-label="Страница Седоны на ютуб"></a></li>
         </ul>
       </div>
 
       <p>
       website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Разработано HTML Academy">HTML Academy</a>
       </p>
     </footer>
 
     <section>
       <h2>Форма поиска гостиниц</h2>
       <form class="" action="https://echo.htmlacademy.ru" method="get">
-        <label>Дата заезда:
-          <input type="text" name="arrival" value="24 апреля 2017">
-        </label>
-        <label>Дата выезда:
-          <input type="text" name="leave" value="4 июля 2017">
-        </label>
-        <label>Взрослые:
-          <input type="number" name="adults" min="0" step="1" value="2">
-        </label>
-        <label>Дети:
-          <input type="number" name="kids" min="0" step="1" value="0">
-        </label>
+        <p>
+          <label>Дата заезда:
+            <input type="text" name="arrival" value="24 апреля 2017">
+          </label>
+        </p>
+        <p>
+          <label>Дата выезда:
+            <input type="text" name="leave" value="4 июля 2017">
+          </label>
+        </p>
+        <p>
+          <label>Взрослые:
+            <input type="number" name="adults" min="0" step="1" value="2">
+          </label>
+        </p>
+        <p>
+          <label>Дети:
+            <input type="number" name="kids" min="0" step="1" value="0">
+          </label>
+        </p>
 
-        <input type="submit" value="Найти">
+        <button type="submit">Найти</button>
 
       </form>
     </section>
