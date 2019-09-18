@@ -3,23 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Поиск гостиниц</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header>
-      <nav>
-        <a href="index.html">
+    <header class="header container">
+      <nav class="header__navigation">
+        <a href="index.html" class="header__logo">
           <img src="img/logo.svg" width="140" height="71" alt="Логотип «Седона»">
         </a>
-        <ul>
+        <ul class="navigation__list">
           <li><a href="about.html">Информация</a></li>
-          <li><a href="media.html">Фото и Видео</a></li>
-        </ul>
-        <ul>
+          <li class="navigation__item-right"><a href="media.html">Фото и Видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+          <li class="navigation__item-current"><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>

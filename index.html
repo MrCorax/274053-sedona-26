@@ -3,27 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header>
-      <nav>
-        <a><img src="img/logo.svg" width="140" height="71" alt="Логотип «Седона»"></a>
-        <ul>
+    <header class="header container">
+      <nav class="header__navigation">
+        <a class="header__logo">
+          <img src="img/logo.svg" width="140" height="71" alt="Логотип «Седона»">
+        </a>
+        <ul class="navigation__list">
           <li><a href="about.html">Информация</a></li>
-          <li><a href="media.html">Фото и Видео</a></li>
-        </ul>
-        <ul>
+          <li class="navigation__item-right"><a href="media.html">Фото и Видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <h1>Это «Седона»</h1>
+    <main class="container">
+      <h1 class="visually-hidden">Это «Седона»</h1>
 
       <div class="">
         <!-- Тут будет фон -->
@@ -109,7 +109,7 @@
 
     </main>
 
-    <footer>
+    <footer class="container">
       <p><b>#visitSEDONA</b></p>
 
       <div class="">
