@@ -295,3 +295,42 @@ img {
   color: rgba(255, 255, 255, 0.4);
   background-color: #503e33;
 }
+/* начинается подвал */
+
+.footer {
+  /* position: absolute; */
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__list {
+  display: flex;
+
+  width: 400px;
+  background-color: tomato;
+  list-style: none;
+}
+
+.footer__item {
+  align-self: center;
+  width: 240px;
+  background-color: tomato;
+}
+
+.footer__item b {
+  display: block;
+
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.footer__item span {
+  line-height: 26px;
+}
+
+/* Попап */
+.popup {
+  display: none;
+}
