@@ -15,9 +15,9 @@
         </a>
         <ul class="navigation__list">
           <li><a href="about.html">Информация</a></li>
-          <li class="navigation__item-right"><a href="media.html">Фото и Видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+          <li class="navigation__item-left"><a href="media.html">Фото и Видео</a></li>
+          <li class="navigation__item-rigth"><a href="map.html">Карта штата</a></li>
+          <li class="navigation__item-rigth"><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -25,85 +25,66 @@
     <main class="container">
       <h1 class="visually-hidden">Это «Седона»</h1>
 
-      <div class="">
-        <!-- Тут будет фон -->
-      </div>
+      <div class="background-index"></div>
 
-      <section>
-        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <ul>
-          <li>
-            <h3>Настоящий городок</h3>
-            <p>
-              - №1 - <br>
-              Седона — не аттракцион для туристов, там течёт своя жизнь
-            </p>
+      <section class="advantages">
+        <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+        <p class="advantages__poster">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item-blue">
+            <h3>Настоящий<br>городок</h3>
+            <p>- №1 -</p>
+            <p class="advantages__item-description">Седона — не аттракцион для туристов,<br>там течёт своя жизнь</p>
           </li>
-          <li>
-            <p>
-              <img src="img/city.jpg" width="800" height="256" alt="Седона на фоне гор">
-            </p>
+          <li class="advantages__item-picture">
+            <img src="img/city.jpg" width="800" height="256" alt="Седона на фоне гор">
           </li>
-          <li>
-            <span>домик</span>
+          <li class="advantages__item advantages__item-self advantages__icon-house">
             <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
           </li>
-          <li>
-            <span>бургер</span>
-            <h3>Еда </h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <li class="advantages__item advantages__item-self advantages__icon-eat">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
           </li>
-          <li>
-            <span>подарок</span>
+          <li class="advantages__item advantages__item-self advantages__icon-gift">
             <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
+            <p>Не только китайского, но и местного<br>производства!</p>
           </li>
-          <li>
-            <p>
-              <img src="img/canyon.jpg" width="800" height="256" alt="Мост дьявола">
-            </p>
+          <li class="advantages__item-picture">
+            <img src="img/canyon.jpg" width="800" height="256" alt="Мост дьявола">
           </li>
-          <li>
-            <h3>Там есть Мост дьявола</h3>
-            <p>
-              - №2 - <br>
-              Да, по нему можно пройти! Если конечно вы осмелитесь
-            </p>
+          <li class="advantages__item advantages__item-blue">
+            <h3>Там есть<br>Мост дьявола</h3>
+            <p>- №2 -</p>
+            <p class="advantages__item-description">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
           </li>
-          <li>
-            <h3>Небольшая площадь</h3>
-            <p>
-              - №3 - <br>
-              Все достопримечательности находятся очень близко
-            </p>
+          <li class="advantages__item">
+            <h3>Небольшая<br>площадь</h3>
+            <p>- №3 -</p>
+            <p class="advantages__item-description">Все достопримечательности<br>находятся очень близко</p>
           </li>
-          <li>
-            <h3>Красивая дорога</h3>
-            <p>
-              - №4 - <br>
-              Ехать в Седону из Лас-Вегаса совсем не скучно!
-            </p>
+          <li class="advantages__item">
+            <h3>Красивая<br>дорога</h3>
+            <p>- №4 -</p>
+            <p class="advantages__item-description">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
           </li>
-          <li>
-            <h3>Мало туристов</h3>
-            <p>
-              - №5 - <br>
-              Большинство едет в гранд каньон и толпится там
-            </p>
+          <li class="advantages__item">
+            <h3>Мало<br>туристов</h3>
+            <p>- №5 -</p>
+            <p class="advantages__item-description">Большинство едет в гранд каньон<br>и толпится там</p>
           </li>
         </ul>
       </section>
 
-      <section>
+      <section class="search__hotel">
         <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button type="button">Поиск гостницы в Седоне</button>
+        <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="btn search__hotel-btn" type="button">Поиск гостницы в Седоне</button>
       </section>
 
       <section>
-        <h2>Карта штата</h2>
+        <h2 class="visually-hidden">Карта штата</h2>
         <img src="img/map.png" width="1200" height="593" alt="Седона, Коконино-Каунти, штат Аризона, Соединённые Штаты Америки">
       </section>
 
@@ -127,7 +108,7 @@
     </footer>
 
     <section>
-      <h2>Форма поиска гостиниц</h2>
+      <h2 class="visually-hidden">Форма поиска гостиниц</h2>
       <form class="" action="https://echo.htmlacademy.ru" method="get">
         <p>
           <label>Дата заезда:

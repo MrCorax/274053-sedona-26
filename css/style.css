@@ -18,7 +18,7 @@ body {
 
   font-size: 14px;
   line-height: 21px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
 
@@ -53,7 +53,7 @@ img {
   width: 1200px;
   margin: 0 auto;
 }
-
+/* начинается шапка */
 .header {
   background-color: #ffffff;
 }
@@ -68,7 +68,7 @@ img {
 
 .header__logo {
   position: absolute;
-  left: 458px;
+  left: 457px;
 }
 
 .navigation__list {
@@ -81,17 +81,26 @@ img {
   list-style: none;
 }
 
+.navigation__list li {
+  width: 128px;
+}
+
 .navigation__list a {
   display: block;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   font-weight: bold;
+  line-height: 26px;
   color: inherit;
 }
 
-.navigation__item-right {
-  margin-right: 190px;
+.navigation__item-left {
+  margin-right: 208px;
+}
+
+.navigation__item-rigth {
+  text-align: right;
 }
 
 .navigation__list a:hover,
@@ -105,4 +114,184 @@ img {
 
 .navigation__item-current {
   color: #766357;
+}
+/* начинается main */
+.background-index {
+  width: 1200px;
+  height: 509px;
+  background-color: #2c4a50;
+  background-image: url("../img/polygon.svg"), url("../img/welcome-in-sedona.png"), url("../img/background-index.jpg");
+  background-position: bottom, 370px 76px, 0 -56px;
+  background-repeat: no-repeat;
+}
+
+.advantages h2 {
+  margin: 0;
+  padding-top: 61px;
+
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+.advantages__poster {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 50px;
+
+  line-height: 26px;
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantages__list h3,
+.advantages__list p {
+  margin: 0;
+}
+
+.advantages__list h3 {
+  padding-top: 47px;
+  padding-bottom: 22px;
+
+  font-size: 21px;
+}
+
+.advantages__item {
+  width: 400px;
+
+  text-align: center;
+}
+
+.advantages__item-blue {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.advantages__item-description {
+  padding-top: 23px;
+  padding-bottom: 59px;
+}
+
+.advantages__item-picture {
+  height: 256px;
+}
+
+.advantages__item-self {
+  position: relative;
+
+  background-color: #ffffff;
+}
+
+.advantages__item-self h3 {
+  padding-top: 161px;
+  padding-bottom: 24px;
+}
+
+.advantages__item-self p {
+  padding-bottom: 83px;
+}
+
+.advantages__icon-house::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 162px;
+
+  width: 75px;
+  height: 72px;
+
+  background-image: url("../img/home.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__icon-eat::before {
+  content: "";
+  position: absolute;
+  top: 61px;
+  left: 163px;
+
+  width: 74px;
+  height: 70px;
+
+  background-image: url("../img/eat.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__icon-gift::before {
+  content: "";
+  position: absolute;
+  top: 56px;
+  left: 167px;
+
+  width: 64px;
+  height: 76px;
+
+  background-image: url("../img/gift.svg");
+  background-repeat: no-repeat;
+}
+
+.search__hotel {
+  background-color: #ffffff;
+}
+
+.search__hotel h2 {
+  margin: 0;
+  padding-top: 50px;
+
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.search__hotel p {
+  margin: 0;
+  padding-top: 23px;
+  padding-bottom: 47px;
+
+  line-height: 24px;
+  text-align: center;
+}
+
+.btn {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.search__hotel-btn {
+  display: block;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 145px;
+  padding-right: 147px;
+
+  font-size: 21px;
+  line-height: 26px;
+
+  color: #ffffff;
+  background-color: #766357;
+  border: none;
+}
+
+.search__hotel-btn:focus,
+.search__hotel-btn:hover {
+  background-color: #604e43;
+}
+
+.search__hotel-btn:active {
+  color: rgba(255, 255, 255, 0.4);
+  background-color: #503e33;
 }
