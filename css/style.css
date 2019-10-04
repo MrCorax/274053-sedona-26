@@ -53,7 +53,13 @@ img {
   width: 1200px;
   margin: 0 auto;
 }
+
+.holder {
+  position: relative;
+}
+
 /* начинается шапка */
+
 .header {
   background-color: #ffffff;
 }
@@ -68,6 +74,7 @@ img {
 
 .header__logo {
   position: absolute;
+  z-index: 1;
   left: 457px;
 }
 
@@ -115,7 +122,9 @@ img {
 .navigation__item-current {
   color: #766357;
 }
+
 /* начинается main */
+
 .background-index {
   width: 1200px;
   height: 509px;
@@ -295,27 +304,40 @@ img {
   color: rgba(255, 255, 255, 0.4);
   background-color: #503e33;
 }
+
 /* начинается подвал */
 
 .footer {
-  /* position: absolute; */
+  position: absolute;
+  z-index: 1;
+  bottom: 5px;
+  left: 50%;
+  margin-left: -600px;
 
   display: flex;
+  align-items: center;
   justify-content: space-around;
+
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
+.footer__socials {
+  margin: 36px 0;
 }
 
 .footer__list {
   display: flex;
-
+  flex-wrap: wrap;
+  justify-content: center;
   width: 400px;
-  background-color: tomato;
+  margin: 0;
   list-style: none;
 }
 
 .footer__item {
-  align-self: center;
   width: 240px;
-  background-color: tomato;
+  margin: 0;
 }
 
 .footer__item b {
@@ -328,6 +350,58 @@ img {
 
 .footer__item span {
   line-height: 26px;
+}
+
+.footer__socials-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3px;;
+  width: 46px;
+  height: 48px;
+
+  background-color: #81b3d2;
+}
+
+.footer__socials-button:hover,
+.footer__socials-button:focus {
+  background-color: #669ec0;
+}
+
+.footer__socials-button:active {
+  background-color: #5496bd;
+}
+
+.footer__socials-button:active path {
+  fill: #88b6d1;
+}
+
+.footer__item-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__item-author span{
+  margin-right: 6px;
+}
+
+.footer__item-logo {
+  width: 115px;
+  height: 40px;
+}
+
+.footer__item-logo path {
+  fill: #000000;
+}
+
+.footer__item-logo:hover path,
+.footer__item-logo:focus path {
+  fill: #81b3d2;
+}
+
+.footer__item-logo:active path {
+  fill: #bdbbbc;
 }
 
 /* Попап */
