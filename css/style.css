@@ -58,6 +58,11 @@ img {
   position: relative;
 }
 
+.catalog-wrapper {
+  width: 1056px;
+  margin: 0 auto;
+}
+
 /* начинается шапка */
 
 .header {
@@ -587,3 +592,231 @@ img {
   color: #88b6d1;
   background-color: #5496bd;
 }
+
+/* catalog page */
+.background-catalog {
+  width: 1200px;
+  height: 217px;
+
+  background-color: #6d6161;
+  background-image: url("../img/background-catalog.png");
+  background-repeat: no-repeat;
+  background-position: 0 -55px;
+}
+
+.selection__hotel-form {
+  display: flex;
+
+  color: #ffffff;
+}
+
+.form__elements {
+  width: 240px;
+}
+
+.form__elements-type {
+  margin-left: 18px;
+}
+
+.form__elements p {
+  margin: 0;
+  margin-top: 27px;
+
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form__elements ul {
+  margin: 0;
+  padding: 0;
+}
+
+.form__elements li:nth-child(1) {
+  margin-top: 25px;
+}
+
+.form__elements-item {
+  margin-bottom: 25px;
+
+  list-style: none;
+}
+
+.form__elements-item input[type="checkbox"] {
+  display: none;
+}
+
+.form__elements-item label {
+  position: relative;
+
+  margin-left: 40px;
+
+  cursor: pointer;
+}
+
+.form__elements-item label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -40px;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.form__elements-item input[type="checkbox"]:checked ~ label::before {
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+
+.form__elements-item input[type="checkbox"]:disabled ~ label::before {
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off-disabled.svg");
+  background-repeat: no-repeat;
+}
+
+.form__elements-item input[type="checkbox"]:checked:disabled ~ label::before {
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on-disabled.svg");
+  background-repeat: no-repeat;
+}
+
+.form__range {
+  display: flex;
+  flex-direction: column;
+  width: 318px;
+  margin-left: 244px;
+}
+
+.form__range-title {
+  margin-top: 27px;
+  margin-bottom: 9px;
+
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form__price-controls {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  height: 33px;
+  margin-bottom: 20px;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.form__price-controls .min-price,
+.form__price-controls .max-price {
+  display: flex;
+  align-items: center;
+  width: 90px;
+  padding-left: 65px;
+
+  cursor: pointer;
+}
+
+.form__price-controls .max-price {
+  padding-left: 55px;
+}
+
+.form__price-controls input {
+  width: 50px;
+  margin: 0;
+  padding-left: 3px;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.form__price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.form__range-controls {
+  position: relative;
+
+  margin-bottom: 33px;
+}
+
+.form__range-controls .form__range-scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.form__range-controls .form__range-bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.form__range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.form__range-toggle-min {
+  left: 0;
+}
+
+.form__range-toggle-max {
+  left: 80%;
+}
+
+.form__range-toggle:hover {
+  transform: scale(1.1);
+}
+
+.form__range-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 33px;
+
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.form__range-btn:hover {
+  color: #000000;
+  background-color: #ffffff
+}
+/* тут закончилась форма */

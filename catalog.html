@@ -22,53 +22,70 @@
       </nav>
     </header>
 
-    <main>
-      <section>
+    <main class="container">
+
+      <section class="selection__hotel">
         <h2 class="visually-hidden">Форма выбора гостиниц</h2>
-        <form class="" action="https://echo.htmlacademy.ru" method="get">
 
-          <p>Инфраструктура:</p>
-          <ul>
-            <li>
-              <label>
-                <input type="checkbox" name="pool" checked>
-              Бассейн</label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="parking">
-              Парковка</label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="wifi">
-              Wi-Fi</label>
-            </li>
-          </ul>
+        <div class="background-catalog">
 
-          <p>Тип жилья:</p>
-          <ul>
-            <li>
-              <label>
-                <input type="checkbox" name="hotel" checked>
-              Гостиница</label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="motel" checked>
-              Мотель</label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="apartment" checked>
-              Апартаменты</label>
-            </li>
-          </ul>
+          <form class="selection__hotel-form catalog-wrapper" action="https://echo.htmlacademy.ru" method="get">
 
-          <!-- Блок «Стоимость в сутки» -->
+            <div class="form__elements">
+              <p class="test">Инфраструктура:</p>
+              <ul>
+                <li class="form__elements-item">
+                  <input id="pool" type="checkbox" name="pool" checked>
+                  <label for="pool">Бассейн</label>
+                </li>
+                <li class="form__elements-item">
+                  <input id="parking" type="checkbox" name="parking">
+                  <label for="parking">Парковка</label>
+                </li>
+                <li class="form__elements-item">
+                  <input id="wireless" type="checkbox" name="wifi">
+                  <label for="wireless">Wi-Fi</label>
+                </li>
+              </ul>
+            </div>
 
-          <input type="submit" value="Показать">
-        </form>
+            <div class="form__elements form__elements-type">
+              <p>Тип жилья:</p>
+              <ul>
+                <li class="form__elements-item">
+                  <input id="hotel" type="checkbox" name="hotel" checked>
+                  <label for="hotel">Гостиница</label>
+                </li>
+                <li class="form__elements-item">
+                  <input id="motel" type="checkbox" name="motel" checked>
+                  <label for="motel">Мотель</label>
+                </li>
+                <li class="form__elements-item">
+                  <input id="apartment" type="checkbox" name="apartment" checked>
+                  <label for="apartment">Апартаменты</label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form__range">
+              <div class="form__range-title">Стоимость в сутки (р):</div>
+              <div class="form__price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="form__range-controls">
+                <div class="form__range-scale">
+                  <div class="form__range-bar"></div>
+                </div>
+                  <div class="form__range-toggle form__range-toggle-min"></div>
+                  <div class="form__range-toggle form__range-toggle-max"></div>
+              </div>
+              <button class="form__range-btn" type="submit">Показать</button>
+            </div>
+
+          </form>
+
+        </div>
       </section>
 
       <section>
