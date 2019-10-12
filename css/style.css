@@ -820,3 +820,99 @@ img {
   background-color: #ffffff
 }
 /* тут закончилась форма */
+.sort-results {
+  background-color: #ffffff;
+}
+
+.sort-results__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sort-results__wrapper-left,
+.sort-results__wrapper-right {
+  display: flex;
+  align-items: center;
+}
+
+.sort-results p,
+.sort-results ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.sort-results__wrapper-left p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-results__wrapper-left .sort-results__title {
+  margin: 0;
+  margin-top: 31px;
+  margin-bottom: 30px;
+  margin-right: 49px;
+
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.sort-results__wrapper-left ul {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  width: 240px;
+
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-results__wrapper-right ul {
+  display: flex;
+}
+
+.sort-results__wrapper-right li{
+  margin-left: 12px;
+}
+
+.sort-results__list .sort-results__active {
+  color: #81b3d2;
+  border: none;
+}
+
+.sort-results__list a {
+  color: #cacaca;
+  border-width: thin;
+  border-bottom-style: dotted;
+  border-bottom-color: #81b3d2;
+}
+
+.sort-results__list a:hover {
+  color: #81b3d2;
+}
+
+.sort-results__list a:active {
+  color: #000000;
+  border: none;
+}
+
+.sort-results__wrapper-right a {
+  border: none;
+}
+
+.sort-results__icon-active polyline {
+  fill: #81b3d2;
+}
+
+.sort-results__item polyline:hover,
+.sort-results__item polygon:hover {
+  fill: #000000;
+}
+
+.sort-results__item polyline:active,
+.sort-results__item polygon:active {
+  fill: #81b3d2;
+}
