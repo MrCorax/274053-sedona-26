@@ -159,9 +159,8 @@ img {
   height: 509px;
   background-color: #2c4a50;
   background-image: url("../img/polygon.svg"), url("../img/welcome-in-sedona.png"), url("../img/background-index.jpg");
-  background-position: bottom, 370px 76px, 0 -56px;
-  /* background-position: 0 226px; это для EI11 будь он не ладен*/
-  background-repeat: no-repeat;
+  background-position: 0 451px, 370px 76px, 0 -56px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 .advantages h2 {
@@ -303,7 +302,7 @@ img {
   text-align: center;
 }
 
-.search__hotel p {
+.search__hotel-title {
   margin: 0;
   padding-top: 23px;
   padding-bottom: 47px;
@@ -322,11 +321,12 @@ img {
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 145px;
-  padding-right: 148px;
+  padding-left: 144px;
+  padding-right: 149px;
 
   font-size: 21px;
   line-height: 26px;
+
 
   color: #ffffff;
   background-color: #766357;
@@ -495,64 +495,92 @@ img {
   background-color: #ffffff;
 }
 
+/* Проба для IE11 */
 .popup p {
   padding: 0;
 }
 
 .popup__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
   width: 458px;
   margin: 0 auto;
+  margin-top: 55px;
 }
 
-.popup__form label {
-  font-weight: bold;
+.popup__form-item,
+.popup__form-count {
+  position: relative;
+}
+
+.popup__form-item {
+  width: 458px;
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+.popup__form-item label,
+.popup__form-count label {
+  display: inline-block;
+  vertical-align: middle;
+
   line-height: 26px;
+  font-weight: bold;
 }
 
-.popup__form input {
-  margin-top: 30px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+.popup__form-item label[for="arrival-date"] {
+  margin-right: 19px;
+}
 
+.popup__form-item label[for="leave-date"] {
+  margin-right: 16px;
+}
+
+.popup__form-item input {
+  box-sizing: border-box;
+  width: 344px;
+  min-height: 37px;
+  /* padding-top: 6px;
+  padding-bottom: 6px; */
+  padding-left: 12px;
+  padding-right: 12px;
+
+  line-height: 26px;
+  font-weight: bold;
   text-transform: uppercase;
-  font-weight: bold;
-  line-height: 26px;
 
   border: none;
   background-color: #f2f2f2;
 }
 
-.popup__form-item,
-.popup__form-wrapper,
-.popup__form-count {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
+.popup__form-item input::-webkit-input-placeholder,
+.popup__form-count input::-webkit-input-placeholder {
+  color: #000000;
 }
 
-.popup__form-item {
-  position: relative;
+.popup__form-item input:focus::-webkit-input-placeholder,
+.popup__form-item input:hover::-webkit-input-placeholder {
+  color: transparent;
 }
 
-.popup__form-item input {
-  width: 334px;
-  padding-left: 13px;
+.popup__form-count input:focus::-webkit-input-placeholder,
+.popup__form-count input:hover::-webkit-input-placeholder {
+  color: transparent;
 }
 
-.popup__form-item input[name="arrival"] {
-  margin-top: 55px;
+.popup__form-item input:-ms-input-placeholder,
+.popup__form-count input:-ms-input-placeholder {
+  color: #000000;
+}
+
+.popup__form-item input::placeholder,
+.popup__form-count input::placeholder {
+  color: #000000;
+}
+
+.popup__form-item input:focus::placeholder,
+.popup__form-count input:hover::placeholder {
+  color: transparent;
 }
 
 .popup__form-item input:hover {
@@ -560,38 +588,44 @@ img {
 }
 
 .popup__form-item input:focus {
+  outline: none;
   -webkit-box-shadow: inset 0 0 0 3px #ebebeb;
           box-shadow: inset 0 0 0 3px #ebebeb;
   background-color: #ffffff;
 }
 
-.popup__form-item label,
-.popup__form-count label {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  margin-bottom: 7px;
+.popup__form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.popup__form-count label {
-  position: relative;
+.popup__form-count {
+  margin: 0;
+  width: 229px;
 }
 
-.popup__form-count input {
-  width: 114px;
-  text-align: center;
-}
-
-.popup__form-count input[name="adults"] {
-  margin-right: 2px;
+.popup__form-count label[for="adults-count"] {
+  margin-right: 37px;
 }
 
 .popup__form-count label[for="kids-count"] {
   margin-left: 50px;
+  margin-right: 22px;
 }
 
-.popup__form .popup__form-count {
-  position: relative;
-  margin-bottom: 53px;
+.popup__form-count input {
+  width: 113px;
+  min-height: 36px;
+  /* padding-top: 6px;
+  padding-bottom: 6px; */
+
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+
+  border: none;
+  background-color: #f2f2f2;
 }
 
 .popup__btn-caledar {
@@ -649,8 +683,9 @@ img {
   display: block;
   width: 100%;
   margin-bottom: 55px;
+  margin-top: 53px;
   padding-top: 17px;
-  padding-bottom: 16px;
+  padding-bottom: 15px;
   border: none;
 
   font-size: 21px;
@@ -669,6 +704,7 @@ img {
   color: #88b6d1;
   background-color: #5496bd;
 }
+/* Конец пробы */
 
 /* catalog page */
 .background-catalog {
@@ -903,7 +939,8 @@ img {
 .form__range-btn {
   display: block;
   margin: 0 auto;
-  padding: 8px 33px;
+  padding: 8px 0px;
+  width: 137px;
 
   color: #ffffff;
   text-transform: uppercase;
@@ -930,9 +967,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.sort-results__wrapper-left {
+  margin-right: auto;
 }
 
 .sort-results__wrapper-left,
@@ -1090,7 +1128,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 259px;
+  width: 260px;
   margin-top: 25px;
   margin-bottom: 32px;
 }
