@@ -166,6 +166,9 @@ img {
 .advantages h2 {
   margin: 0;
   padding-top: 61px;
+  padding-left: 360px;
+  padding-right: 360px;
+  width: 480px;
 
   font-size: 21px;
   line-height: 26px;
@@ -795,7 +798,6 @@ img {
 }
 
 .item-checkbox {
-  content: "";
   position: absolute;
   top: -2px;
   left: -40px;
@@ -807,7 +809,8 @@ img {
   background-repeat: no-repeat;
 }
 
-.form__elements-item input[type="checkbox"]:focus ~ .item-checkbox {
+.form__elements-item input[type="checkbox"]:focus ~ .item-checkbox,
+.form__elements-item input[type="checkbox"]:hover ~ .item-checkbox {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
 }
@@ -820,7 +823,8 @@ img {
   background-repeat: no-repeat;
 }
 
-.form__elements-item input[type="checkbox"]:checked:focus ~ .item-checkbox {
+.form__elements-item input[type="checkbox"]:checked:focus ~ .item-checkbox,
+.form__elements-item input[type="checkbox"]:checked:hover ~ .item-checkbox {
   width: 27px;
   height: 23px;
 
